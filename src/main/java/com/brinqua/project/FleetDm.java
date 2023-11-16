@@ -231,10 +231,10 @@ public class FleetDm {
 
 			if (softwaresData != null) {
 				List<SoftwareValue> softwares = softwaresData.getSoftwares();
-
 //		            int numberOfHostsToPrint = Math.min(10, hosts.size());
 //		            System.out.println(softwares.size());
-				for (int i = 0; i <= 10; i++) {
+				for (int i = 0; i <= 10; i++) 
+				{
 					SoftwareValue software = softwares.get(i);
 					System.out.println("software #" + (i + 1));
 					System.out.println("software name : " + software.getName());
@@ -243,7 +243,6 @@ public class FleetDm {
 					System.out.println();
 				}
 			}
-
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
